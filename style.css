@@ -1,20 +1,29 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+p
+{
+  margin: 0;
+}
+
 body{
     display: grid;
     background-color: #Ecf2f8;
   }
 
-.center__container{
-    max-width: 1600px;
+.container{
+    max-width: 1300px;
     margin: 0 auto;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 3%;
+    
 }
 
-.one {
-    border: 2px solid #a775f1;
-}
-    
     
 .container {
     display: grid;
@@ -31,18 +40,21 @@ body{
 }
     
 .lorem {
-  font-size: 15px;
+  font-size: 13px;
   padding: 1rem;
   border-radius: 0.5rem;
-      
+        
 }
-    
+
+
 .lorem:nth-child(1) {
   grid-area: one;
+  color: #fff;
   background-color: #a775f1;
 }
 .lorem:nth-child(2) {
   grid-area: two;
+  color: #fff;
   background-color: #48556A
 }
 .lorem:nth-child(3) {
@@ -51,6 +63,7 @@ body{
 }
 .lorem:nth-child(4) {
   grid-area: four;
+  color: #fff;
   background-color: #19212e;
 }
 .lorem:nth-child(5) {
@@ -58,8 +71,13 @@ body{
   background-color: #ffffff;
 }
 
+.top{
+  display: flex;
+  justify-content: space-between;
+}
+
 img {
-  width: 2rem;
+  width: 3rem;
   border-radius: 50px;
 }
 .profile{
@@ -67,21 +85,29 @@ img {
   align-items: center;
   gap: 0.5rem;
 }
-.profile-name{
-  display: block;
-}
+
 h2{
   font-size: 1.5rem;
   padding: 1rem;
 }
-h6 {
+span {
   font-size: 13px;
   opacity: 50%;
 }
 p{
   font-size: 17px;
-  width: 80%;
+  opacity: 50%;
+
 }
+.icon{
+  position: absolute;
+}
+
+.fa-solid{
+  font-size: 5rem;
+  opacity: 20%;
+}
+  
     
 @media screen and (min-width: 528px) {
   .container {
